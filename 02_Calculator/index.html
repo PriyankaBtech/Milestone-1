@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+              // Calculator
+
+    const num1 = prompt("Enter your first number")
+    const mathematicalOperator = prompt("Select one of operator(+, -, *, /)");   
+    const num2 = prompt("Enter your last number")
+
+
+//switch accepts only one argument
+
+function calculator(value1, value2) {
+    switch (mathematicalOperator) {
+        case "+":
+            // if(mathematicalOpertor == "+")
+            let addResult =  parseFloat(value1) + parseFloat(value2)  
+            console.log(`${value1} + ${value2} = ${addresult}`)
+            break;  
+
+        case "-":
+            // if(mathematicalOpertor == "-")
+            let subResult =  parseFloat(value1) - parseFloat(value2)  
+            console.log(`${value1} - ${value2} = ${subResult}`)
+            break 
+
+        case "*":
+            // if(mathematicalOpertor == "*")
+            let multiResult =  parseFloat(value1) * parseFloat(value2)  
+            console.log(`${value1} * ${value2} = ${multiResult}`)
+            break
+            
+        case "/":
+            // if(mathematicalOpertor == "/")
+            let divResult =  parseFloat(value1) / parseFloat(value2)  
+            console.log(`${value1} / ${value2} = ${divResult}`)
+            break          
+
+        default:
+            return "Invalid Operator"
+    }
+}
+alert("Calculation Done")
+
+</script>    
+</body>
+</html>
